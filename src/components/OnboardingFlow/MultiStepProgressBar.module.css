@@ -1,0 +1,11 @@
+
+
+.stack .progress {
+    --progress-radius: 410px;
+    background-color: var(--mantine-color-rdfnyellow-0);
+}
+
+.progress .section {
+    border-radius: 400px;
+    --progress-radius: 400px;
+}

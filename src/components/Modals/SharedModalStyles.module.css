@@ -1,0 +1,17 @@
+.inputRoot {
+    .input {
+        font-size: var(--mantine-font-size-md);
+        &:focus-within {
+            --input-bd: var(--mantine-color-rdfnyellow-6);
+        }
+    }
+}
+
+.buttonRoot {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.buttonLabel {
+    font-size: var(--mantine-font-size-md);
+}

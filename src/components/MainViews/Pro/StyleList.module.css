@@ -1,0 +1,15 @@
+
+.actionIconRoot {
+    background: transparent;
+    --ai-bg: transparent;
+    --ai-bd: none;
+}
+
+.actionIconIcon {
+    color: var(--mantine-color-gray-7);
+    background: transparent;
+
+    &:hover {
+        background: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    }
+}

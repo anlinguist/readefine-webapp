@@ -1,0 +1,136 @@
+.navbar {
+  position: relative;
+  background-color: light-dark(var(--mantine-color-rdfnyellow-0), var(--mantine-color-dark-8));
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+  width: 120px; /* default for large screens */
+  overflow: visible;
+}
+
+.navbarCollapsed {
+  width: 5% !important; /* collapsed width on mobile screens */
+}
+
+/* Show the 'chevron indicator' only if we are collapsed. */
+.indicator {
+  display: none;
+}
+.navbarCollapsed .indicator {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0; /* adjust so it "peeks" out from the edge */
+  transform: translateY(-50%);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+/* The main content wrapper inside the navbar */
+.navbarContent {
+  padding: var(--mantine-spacing-md);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid
+    light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
+  align-items: center;
+  width: 120px;
+  padding: 16px;
+  transition: transform 0.3s ease;
+  height: 100%;
+  overflow: auto; /* or scroll, if desired */
+  overflow-x: hidden;
+}
+
+.navbarCollapsed .navbarContent {
+  transform: translateX(-100%);
+}
+
+.navbarMain {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.link {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--mantine-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+
+  &:hover {
+    background-color: light-dark(var(--mantine-color-rdfnyellow-2), var(--mantine-color-body));
+  }
+
+  &[data-active] {
+    &, &:hover {
+      background-color: var(--mantine-color-rdfnyellow-6);
+      color: light-dark(black, var(--mantine-color-dark-8));
+    }
+  }
+}
+
+.submenudd .menutext {
+  font-size: var(--mantine-font-size-sm);
+}
+
+.submenuprofile .menutext {
+  font-size: var(--mantine-font-size-sm);
+}
+
+.submenuprofile {
+  padding: 20px;
+}
+
+.tooltip {
+  --tooltip-color: var(--mantine-color-text);
+  --tooltip-bg: light-dark(white, var(--mantine-color-dark-8));
+}
+
+.group {
+  width: 100%;
+  max-height: 100px;
+}
+
+.title {
+  background-image: linear-gradient(rgb(255, 222, 0), rgb(255, 222, 0));
+  background-repeat: no-repeat;
+  background-size: 0px 3px;
+  position: relative;
+  display: inline !important;
+  background-position: left 0px bottom 0px;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  width: auto;
+  animation: 0.75s linear 0s 1 normal forwards running animatereadefine;
+  background-position: left 0px bottom 0px;
+  cursor: pointer;
+}
+
+.titlerdfncount {
+  background-image: linear-gradient(rgb(255, 222, 0), rgb(255, 222, 0));
+  background-repeat: no-repeat;
+  background-size: 0px 3px;
+  position: relative;
+  display: inline !important;
+  background-position: left 0px bottom 0px;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+  width: auto;
+  animation: 0.75s linear 0s 1 normal forwards running animatereadefine;
+  background-position: left 0px bottom 0px;
+}
+
+@keyframes animatereadefine {
+  0% {
+    background-size: 0 3px;
+  }
+  50% {
+    background-size: 50% 3px;
+  }
+  100% {
+    background-size: 100% 3px;
+  }
+}

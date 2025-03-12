@@ -1,0 +1,30 @@
+.container {
+  margin: 40px 60px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: white;
+  border: 1px solid #ffde00;
+  outline: none;
+  box-shadow: unset;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: unset;
+}
+
+.btn-primary:hover {
+  background-color: #ffde00;
+}
+
+#formbtncontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}

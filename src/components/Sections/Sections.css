@@ -1,0 +1,543 @@
+#sections-container .inner_hr {
+  height: 1px;
+  background-color: black;
+  margin: 40px 20%;
+}
+
+#sections-container #addbrowsercontainer {
+  text-align: center;
+  width: 100%;
+  filter: drop-shadow(3px 4px 2px grey);
+}
+
+#sections-container .sloganheader {
+  text-align: center;
+  font-size: 38px;
+  margin: 0px 15%;
+  margin-top: 50px;
+  padding: 0px 15px;
+  background-color: white;
+  display: inline-block;
+  font-weight: unset;
+}
+
+
+#sections-container .subslogan {
+  text-align: center;
+  font-size: 26px;
+  margin: 30px 15%;
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  #sections-container .sloganheader {
+    font-size: 30px;
+  }
+}
+
+
+#sections-container .addtobrowserbtn {
+  text-align: center;
+  border-radius: 8px;
+  caret-color: transparent;
+  padding: 20px 20px;
+  font-size: 20px;
+  color: black;
+  background-color: #ffde00;
+  border: 1px solid #ffde00;
+  width: 50%;
+  cursor: pointer;
+  font-size: 15px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#sections-container .addtobrowserbtn:hover {
+  background-color: #ffe74e;
+  border-color: #ffe74e;
+}
+
+#sections-container .addtobrowserbtn:focus {
+  outline: none;
+}
+
+#sections-container .unsupportedbrowser.addtobrowserbtn {
+  pointer-events: none;
+}
+
+#sections-container .unsupportedbrowser.addtobrowserbtn {
+  pointer-events: none;
+}
+
+
+
+
+
+#sections-container #svg_img_src svg {
+  box-shadow: 0px 5px 11px 0px var(--mantine-color-gray-2);
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#sections-container #svg_tooltip {
+  transition: opacity 300ms, transform 300ms;
+  animation-name: svg-animate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+#sections-container #svg_img_src:hover #svg_tooltip {
+  transform: translate(273px, 990px);
+  opacity: 1;
+}
+
+#sections-container #Mouse {
+  transform: 300ms;
+  animation-name: svg-animate-mouse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes svg-animate-mouse {
+  0% {
+    transform: translate(9979.649955px, 4584.011962px)
+  }
+
+  60% {
+    transform: translate(2460px, 4584.011962px)
+  }
+
+  100% {
+    transform: translate(2460px, 4584.011962px)
+  }
+}
+
+@keyframes svg-animate {
+  0% {
+    transform: translate(273px, 1900px);
+    opacity: 0;
+  }
+
+  40% {
+    transform: translate(273px, 1900px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate(273px, 1690px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(273px, 1690px);
+    opacity: 1;
+  }
+}
+
+/* second 3 */
+#sections-container .mat_icon_as_image {
+  font-family: "Material Icons";
+  font-size: 200px;
+}
+
+/* section styles */
+#sections-container .side {
+  align-items: center;
+  -ms-flex: 1;
+  /* IE10 */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#sections-container .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  flex-direction: row;
+  min-height: 350px;
+  align-items: center;
+  padding: 20px 15%;
+}
+
+#sections-container .main {
+  -ms-flex: 1;
+  /* IE10 */
+  flex: 1;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  #sections-container .row {
+    flex-direction: column;
+  }
+
+  #sections-container .main {
+    margin-left: unset;
+  }
+}
+
+#sections-container .row_problem_desc {
+  text-align: center;
+  font-size: 26px;
+  margin: 10px auto;
+}
+
+#sections-container .readefinedescription {
+  font-size: 22px;
+  text-align: center;
+  margin: 3px 0px;
+  background-color: white;
+}
+
+/* blogs */
+#sections-container #blog-posts-section {
+  background-color: white;
+  position: relative;
+  z-index: 1111;
+}
+
+#sections-container #blog-posts-section h3 {
+  font-weight: unset;
+}
+
+#sections-container #homepage_blog {
+  max-width: 940px;
+  margin: auto;
+}
+
+#sections-container #blog-posts-title {
+  font-size: 45px;
+  text-align: center;
+}
+
+#sections-container .blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-around;
+}
+
+#sections-container .blog-post {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  max-width: 300px;
+  flex: 0 0 auto;
+  flex-direction: column;
+  transition: all .2s ease-in-out;
+}
+
+#sections-container .blog-post:hover {
+  background-color: #e9eaec;
+  border-radius: 8px;
+  transform: scale(1.1);
+}
+
+#sections-container .blog-post-image {
+  border-radius: 8px;
+  margin: 10px;
+  max-height: 158px;
+  min-height: 158px;
+  height: 158px;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 940px) {
+  #sections-container .blog-post-image {
+    margin: auto;
+    width: 280px;
+    max-height: 169px;
+    height: 158;
+    min-height: 158px;
+    display: block;
+  }
+}
+
+#sections-container .blog-title {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+#sections-container #section1 {
+  text-align: center;
+}
+
+/* footer styles */
+#sections-container .footer {
+  width: 100%;
+  position: relative;
+  z-index: 1111;
+}
+
+#sections-container #footercatcontainer {
+  display: flex;
+  justify-content: center;
+}
+
+#sections-container .footercategory {
+  padding: 0px 20px;
+}
+
+#sections-container .footercatname {
+  font-weight: 700;
+}
+
+#sections-container #copyrights {
+  text-align: center;
+  padding: 25px;
+}
+
+#sections-container a.pplink:link {
+  color: var(--mantine-color-dark-8);
+  text-decoration: none;
+}
+
+#sections-container a.pplink:visited {
+  color: var(--mantine-color-dark-8);
+  text-decoration: none;
+}
+
+#sections-container a.pplink:hover {
+  color: var(--mantine-color-dark-8);
+  text-decoration: none;
+}
+
+#sections-container a.pplink:active {
+  color: var(--mantine-color-dark-8);
+  text-decoration: none;
+}
+
+#sections-container #ppbtn:hover {
+  cursor: pointer;
+}
+
+#sections-container #contactusbtn:hover {
+  cursor: pointer;
+}
+
+#sections-container .footer h3 {
+  font-weight: unset;
+}
+
+#sections-container .footer h5 {
+  margin: 5px 0;
+  font-weight: unset;
+  color: black;
+}
+
+
+#sections-container .showmodal {
+  display: block;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 111111;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+#sections-container .nomodal {
+  display: none;
+}
+
+#sections-container #contact-us-form {
+  min-width: 200px;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#sections-container .contact-us-form-inputs {
+  display: block;
+  width: 100%;
+  margin: 5px auto;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'Roboto-Light';
+}
+
+#sections-container .contact-us-form-inputs:focus {
+  outline: none;
+  border: 1px solid #ffde00;
+}
+
+#sections-container #contact-us-form-submit {
+  display: block;
+  width: 100px;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  background-color: #ffde00;
+  border-radius: 8px;
+}
+
+#sections-container #contact-us-form-submit.contacting {
+  display: none;
+}
+
+#sections-container #contact-us-form-submit:hover {
+  cursor: pointer;
+  background-color: #ffe74e;
+}
+
+#sections-container #contact-us-desc {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
+/* Modal Content/Box */
+#sections-container .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* The Close Button */
+#sections-container .close {
+  color: #aaa;
+  position: absolute;
+  font-size: 28px;
+  top: 10px;
+  right: 20px;
+  font-weight: bold;
+}
+
+#sections-container .close:hover,
+#sections-container .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sections-container #privacy-policy-desc {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#sections-container #privacy-policy {
+  margin: 5% auto;
+}
+
+
+#sections-container #contact-us-problem {
+  resize: none;
+  font-family: 'Roboto-Light';
+}
+
+#sections-container #contact_loader {
+  border-radius: 50%;
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  margin: 0px 5px;
+  max-height: 20px;
+  border: 6px solid transparent;
+  border-top: 3px solid #ffde00;
+  animation: rotating .6s infinite linear;
+  display: none;
+  margin-top: 5px;
+}
+
+#sections-container #contact_loader.contacting {
+  display: block;
+}
+
+#sections-container #contact-us-receipt {
+  display: none;
+  min-width: 200px;
+  max-width: 400px;
+  margin: auto;
+}
+
+
+#sections-container #addbrowsercontainer.rdfn_installed {
+  display: none;
+}
+
+#loginoptions {
+  max-width: 400px;
+  margin: auto;
+}
+
+#sections-container #loginoptions.rdfn_not_installed {
+  display: none;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #sections-container .sloganheader {
+    background-color:transparent;
+    color: white;
+  }
+
+  #sections-container .subslogan {
+    background-color:transparent;
+    color: white;
+  }
+
+  #sections-container .main {
+    background-color:transparent;
+    color: white;
+  }
+
+  #sections-container .readefinedescription {
+    background-color:transparent;
+    color: white;
+  }
+
+  .side.mat_icon_as_image {
+    color: white;
+  }
+
+  .inner_hr {
+    background-color: white;
+  }
+
+  #sections-container .inner_hr {
+    background-color: white;
+  }
+}

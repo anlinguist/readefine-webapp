@@ -1,0 +1,7 @@
+.input {
+    background-color: var(--mantine-color-body);
+    &:focus-within {
+        --input-bd: var(--mantine-color-rdfnyellow-6);
+    }
+}
+

@@ -1,0 +1,30 @@
+.searchroot {
+    height: 50px;
+    border-radius: 8px;
+}
+
+.searchroot .searchwrapper {
+    height: 100%;
+}
+
+.searchroot .searchinput {
+    height: 100%;
+    font-size: var(--mantine-font-size-md);
+    background: transparent;
+
+    /* light mode / dark mode */
+    border: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-8));
+    
+    border-radius: 8px;
+
+    &:focus {
+        border: 1px solid var(--mantine-color-rdfnyellow-6);
+    }
+}
+
+.searchroot .searchinputnb {
+    height: 100%;
+    font-size: var(--mantine-font-size-md);
+    background-color: var(--mantine-color-body);
+    border: none;
+}
